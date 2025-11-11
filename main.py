@@ -1,4 +1,4 @@
 import code
 
 
-await code.interact()
+code.interact()
