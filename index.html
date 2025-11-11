@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>REPL</title>
+
+    <!-- Recommended meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- Safari SharedArrayBuffer -->
+    <script src="./safari-sab.js"></script>
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.11.1/core.js"></script>
+
+    <!-- custom CSS -->
+    <style>
+        body, html, mpy-terminal, py-terminal {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            height: 100dvh;
+            background-color: rgb(25, 26, 25);
+        }
+    </style>
+</head>
+
+<body>
+  <!-- your code goes here... -->
+    <script type="py" src="./main.py" terminal worker>
+        
+    </script>
+</body>
+
+</html>
