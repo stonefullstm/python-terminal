@@ -19,7 +19,7 @@ const {
     protocol: i,
     host: r,
     pathname: l
-} = location, c = `${i}//https://professorcarlos.blogspot.com${l}?sabayon`, d = new BroadcastChannel("dc78209b-186c-4f83-80e9-406becb7d9f3");
+} = location, c = `${i}//${r}${l}?sabayon`, d = new BroadcastChannel("dc78209b-186c-4f83-80e9-406becb7d9f3");
 d.onmessage = e => s.apply(null, e.data);
 addEventListener("activate", e => e.waitUntil(clients.claim())), addEventListener("fetch", e => {
     const {
