@@ -21,6 +21,7 @@ const {
     pathname: l
 } = location, c = `${i}//${r}${l}?sabayon`, d = new BroadcastChannel("dc78209b-186c-4f83-80e9-406becb7d9f3");
 d.onmessage = e => s.apply(null, e.data);
+console.log("Service worker for Sabayon at", c)
 addEventListener("activate", e => e.waitUntil(clients.claim())), addEventListener("fetch", e => {
     const {
         request: t
