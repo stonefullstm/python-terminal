@@ -14,7 +14,7 @@
     <!-- PyScript -->
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.1/core.css">
     <script type="module" src="https://pyscript.net/releases/2025.11.1/core.js"></script>
-    <script src="/mini-coi.js"></script>
+    <!-- <script src="/mini-coi.js"></script> -->
     <!-- custom CSS -->
     <style>
         body, html, mpy-terminal, py-terminal {
@@ -29,7 +29,7 @@
 
 <body>
   <!-- your code goes here... -->
-    <script type="py" src="./main.py" terminal worker>
+    <script type="py" src="./main.py" service-worker="./sw.js" terminal worker>
         
     </script>
 </body>
